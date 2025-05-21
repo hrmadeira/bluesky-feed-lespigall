@@ -53,8 +53,8 @@ export class FeedGenerator {
       didResolver,
       cfg,
     }
-    feedGeneration(server, ctx)
-    describeGenerator(server, ctx)
+    feedGeneration(ctx)
+    describeGenerator(ctx)
     app.use(server.xrpc.router)
     app.use(wellKnown(ctx))
 
